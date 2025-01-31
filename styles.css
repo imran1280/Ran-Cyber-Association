@@ -304,3 +304,8 @@ nav {
     color: #007bff; /* Blue color for highlight */
     text-decoration: underline;
 }
+
+.logo {
+    width: 150px; /* Adjust the size */
+    height: auto;
+}
