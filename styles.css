@@ -298,3 +298,9 @@ nav {
     background-color: #fff; /* Optional: background color for better visibility */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for effect */
 }
+
+.developer-name {
+    font-weight: bold;
+    color: #007bff; /* Blue color for highlight */
+    text-decoration: underline;
+}
