@@ -135,3 +135,63 @@ footer {
     text-decoration: none;
     cursor: pointer;
         }
+#cyber-courses {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.course-link:hover {
+    background-color: #0056b3;
+}
+
+#newsletter {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#newsletter form {
+    margin: 0 auto;
+}
+
+#newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
