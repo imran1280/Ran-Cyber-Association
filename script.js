@@ -61,3 +61,21 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
     }
+
+document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function () {
+        const tool = this.closest('.review-card').querySelector('.stars').getAttribute('data-tool');
+        const ratingValue = this.getAttribute('data-value');
+
+        // Mark selected stars
+        this.parentNode.querySelectorAll('.star').forEach(star => {
+            star.classList.remove('selected');
+        });
+        for (let i = 0; i < ratingValue; i++) {
+            this.parentNode.querySelectorAll('.star')[i].classList.add('selected');
+        }
+
+        // Display the rating
+        document.getElementById(`rating-${tool}`).textContent = `Rating: ${ratingValue}`;
+    });
+});
