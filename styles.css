@@ -290,3 +290,11 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scroll */
     overflow-y: auto;   /* Enable vertical scroll */
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* To ensure it stays above other content */
+    background-color: #fff; /* Optional: background color for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for effect */
+}
