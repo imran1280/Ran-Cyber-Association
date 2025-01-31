@@ -89,3 +89,41 @@ window.addEventListener('scroll', function() {
         // Do something after scroll ends, for example loading more content
     }, 150);
 });
+// Temporary Email API Integration
+document.getElementById('tempEmailForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // API URL (Here we will use TempMail API)
+    fetch('https://api.temp-mail.org/request/mail/id/')
+        .then(response => response.json())
+        .then(data => {
+            const email = data[0].email;
+            document.getElementById('generatedEmail').innerHTML = `Your temporary email is: <strong>${email}</strong>`;
+        })
+        .catch(error => {
+            console.error('Error generating temporary email:', error);
+            alert('Something went wrong, please try again later.');
+        });
+});
+
+// Hacking Animation - Simulating output in hacker terminal
+const hackerOutput = document.querySelector('.hacker-output');
+
+function simulateHacking() {
+    const outputs = [
+        'Initializing hack...',
+        'Bypassing firewalls...',
+        'Accessing database...',
+        'Decrypting files...',
+        'Data breach detected...',
+        'Hack successful!'
+    ];
+    
+    let i = 0;
+    setInterval(() => {
+        hackerOutput.innerText = outputs[i % outputs.length];
+        i++;
+    }, 3000);
+}
+
+simulateHacking();
