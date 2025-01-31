@@ -194,4 +194,72 @@ footer {
     color: white;
     border: none;
     cursor: pointer;
-    }
+}
+
+#cyber-tools {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.tool-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.tool-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tool-link:hover {
+    background-color: #0056b3;
+                     }
+#reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.star {
+    font-size: 2em;
+    cursor: pointer;
+    color: gray;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+#rating-wireshark, #rating-metasploit {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
