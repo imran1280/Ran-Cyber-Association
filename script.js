@@ -79,3 +79,13 @@ document.querySelectorAll('.star').forEach(star => {
         document.getElementById(`rating-${tool}`).textContent = `Rating: ${ratingValue}`;
     });
 });
+
+let timeout;
+window.addEventListener('scroll', function() {
+    if (timeout) {
+        clearTimeout(timeout);
+    }
+    timeout = setTimeout(function() {
+        // Do something after scroll ends, for example loading more content
+    }, 150);
+});
